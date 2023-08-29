@@ -187,6 +187,12 @@ span {
 #typing span {
       font-weight: 800;
 }
+@media (max-width:530px){
+      #typing span{
+            font-weight: 300;
+            font-size:xx-large;
+      }
+}
 
 .mountain-6 {
       position: absolute;
@@ -507,7 +513,10 @@ span {
             height: 300px;
       }
       .content .img .cardbody h6{
-            font-size: 1rem;
+            font-size: 0.8rem;
+      }
+      .content .img .cardbody img{
+            width: 20px;
       }
 }
 @media (max-width:780px) {
@@ -528,8 +537,14 @@ span {
             font-size: 1rem;
       }
       .content .img .cardbody h6{
-            font-size: 0.8rem;
+            font-size: 0.7rem;
       }
+}
+@media (max-width:520px){
+      .content .text-hider{
+            display: none;
+      }
+      
 }
 @media (max-width:470px) {
       .content .img{
@@ -537,7 +552,10 @@ span {
             height: 230px;
       }
       .content .img .cardbody h6{
-            font-size: 0.7rem;
+            font-size: 0.6rem;
+      }
+      .content .img .cardbody img{
+            width: 17px;
       }
 }
 
@@ -796,6 +814,15 @@ span {
 
 .main3 .c .ch,.main3 .c .cf{
       background-color: rgba(0, 0, 0, 0.2);
+}
+.main3 .card-form{
+      width: 25rem;
+}
+@media (max-width:465px){
+      .main3 .card-form{
+            width: 20rem;
+      }
+
 }
 
 
