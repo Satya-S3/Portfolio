@@ -533,11 +533,9 @@ span {
             width: 250px;
             height: 250px;
       }
-      .content p{
-            font-size: 1rem;
-      }
+      
       .content .img .cardbody h6{
-            font-size: 0.7rem;
+            font-size: 0.6rem;
       }
 }
 @media (max-width:520px){
@@ -552,7 +550,7 @@ span {
             height: 230px;
       }
       .content .img .cardbody h6{
-            font-size: 0.6rem;
+            font-size: 0.5rem;
       }
       .content .img .cardbody img{
             width: 15px;
