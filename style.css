@@ -799,6 +799,7 @@ span {
       align-items: center;
       color: white;
       text-shadow: 2px 2px 2px black;
+      overflow: hidden;
 }
 
 .main3 .card {
@@ -828,6 +829,7 @@ span {
 footer {
       color: white;
       background-color: #0a0a0a;
+      overflow: hidden;
 }
 
 footer .in{
