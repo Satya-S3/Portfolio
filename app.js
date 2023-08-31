@@ -163,3 +163,6 @@ let clear=document.querySelector('#clear');
 clear.addEventListener('click',()=>{
       input.forEach(e => e.value='');
 })
+
+
+////////////////////////Keyboard problem///////////////////////////////
