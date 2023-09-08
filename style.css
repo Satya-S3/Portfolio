@@ -555,8 +555,8 @@ span {
 }
 @media (max-width:470px) {
       .content .img{
-            width: 200px;
-            height: 200px;
+            width: 230px;
+            height: 230px;
       }
       .content .img .cardbody h6{
             font-size: 0.4rem;
