@@ -32,7 +32,7 @@ window.addEventListener('mousemove', (e) => {
       return new Promise((resolve)=>setTimeout(resolve,ms))
  } 
 
- const text=['DEVELOPER','CODER']
+ const text=['SATYA','DEVELOPER','CODER']
  const el=document.getElementById('typewriter')
 
  let sleepTime=200;
