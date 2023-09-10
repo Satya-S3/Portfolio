@@ -67,12 +67,12 @@ header ul a {
       text-decoration: none;
       color: #fff;
       padding: 0 0.9rem;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 0.73rem;
 }
 
 header ul a:hover {
-      color: #fff;
+      color: #ffffffdc;
       opacity: 0.7;
 }
 
