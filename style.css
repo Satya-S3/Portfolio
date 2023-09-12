@@ -35,6 +35,9 @@ header nav {
 header nav img {
       width: 70px;
 }
+header nav img:hover{
+      animation: rotate 4s infinite linear;
+}
 
 header ul {
       display: grid;
@@ -42,12 +45,22 @@ header ul {
       list-style: none;
       align-items: center;
 }
-
+header ul li{
+      width: 5rem;
+}
+@media screen and (max-width:550px){
+      header ul li{
+            width: 4.3rem;
+      }
+}
 @media screen and (max-width:440px) {
       header ul {
             justify-content: center;
             align-items: center;
             padding: 0;
+      }
+      header ul li{
+            width: 4.8rem;
       }
 
       header nav {
@@ -73,7 +86,6 @@ header ul a {
 
 header ul a:hover {
       color: #ffffffdc;
-      opacity: 0.7;
 }
 
 
@@ -181,7 +193,7 @@ main {
 .text h2 {
       font-weight: 100;
       font-size: 6.7rem;
-      text-shadow: 2px 2px 4px black;
+      text-shadow: 3px 3px 4px black;
 }
 
 .text h1,
@@ -189,7 +201,7 @@ span {
       font-weight: 800;
       font-size: 7rem;
       line-height: 0.88;
-      text-shadow: 2px 2px 4px black;
+      text-shadow: 3px 3px 4px black;
 }
 
 #typing {
@@ -402,59 +414,46 @@ span {
       background-size: 100% 100%;
 }
 
-.main h1 {
-      font-size: 300px;
+.top{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+#top-h1 {
+      font-size: 3vw;
       position: absolute;
-      top: 50%;
+      top: 5vw;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+#top-h2 {
+      font-size: 3vw;
+      position: absolute;
+      top: 8vw;
       left: 50%;
       transform: translate(-50%, -50%);
 }
 
-#top-h {
-      bottom: 50%;
-}
-
-@media (max-width:1100px) {
-      .main h1 {
-            font-size: 200px;
-            color: #ffffffee;
+@media (max-width:685px) {
+      #top-h1{
+            font-size: 3vw;
+            top: 12vw;
       }
-
-      .t1 {
-            margin-top: 5rem;
-      }
-
-      #top-h {
-            bottom: 50%;
-      }
-
-      #bottom-h {
-            display: none;
+      #top-h2{
+            font-size: 3vw;
+            top: 16vw;
       }
 }
-
-@media (max-width:725px) {
-      .main h1 {
-            font-size: 150px;
+@media (max-width:385px) {
+      #top-h1{
+            font-size: 3vw;
+            top: 20vw;
       }
-
-      #top-h {
-            top: 60%;
+      #top-h2{
+            font-size: 3vw;
+            top: 25vw;
       }
-}
-
-@media (max-width:540px) {
-      .main h1 {
-            font-size: 100px;
-      }
-
-      #top-h {
-            top: 70%;
-      }
-}
-
-#bottom-h {
-      top: -2%
 }
 
 .content {
@@ -473,6 +472,12 @@ span {
 .content p {
       font-size: 1.5rem;
 }
+.cardbody h6{
+      text-shadow: 2px 2px 4px black;
+}
+.cardbody h6 a:hover > img{
+      animation: rotate 4s infinite linear;
+}
 
 .content .img {
       width: 350px;
@@ -484,6 +489,18 @@ span {
       animation: morph 8s ease-in-out infinite;
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       transition: all 0.5s ease-in-out;
+     
+}
+@keyframes rotate{
+      0%{
+            transform: rotate(0deg);
+      }
+      50%{
+            transform: rotate(180deg);
+      }
+      100%{
+            transform: rotate(360deg);
+      }
 }
 @keyframes morph {
       0% {
@@ -927,6 +944,10 @@ footer .social {
 
 footer .social h6 {
       padding: 15px;
+}
+
+.social h6:hover > img{
+      animation: rotate 4s infinite linear;
 }
 
 @media (max-width:770px) {

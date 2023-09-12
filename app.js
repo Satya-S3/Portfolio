@@ -63,7 +63,47 @@ window.addEventListener('mousemove', (e) => {
  }
 
 writeLoop()
+///////////////////////////Random text///////////////////
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+let interval = null;
+
+
+const satya = (event)=>{  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 50);
+}
+
+let toph2=document.querySelector("#top-h2")
+toph2.onmouseover=satya;
+let navh=document.querySelector("#navh")
+navh.onmouseover=satya;
+let navm=document.querySelector("#navm")
+navm.onmouseover=satya;
+let navo=document.querySelector("#navo")
+navo.onmouseover=satya;
+let navf=document.querySelector("#navf")
+navf.onmouseover=satya;
 ///////////////////////GreenSock Animation////////////////////////////
 
 let timeline=gsap.timeline();
@@ -106,8 +146,6 @@ t1.to('.top',{
       bottom:'-50%'
 },'a').to('.content',{
       marginTop:'5%'
-},'a').to('#top-h',{
-      top:'70%'
 },'a').to('#bottom-h',{
       bottom:'-70%'
 },'a')
