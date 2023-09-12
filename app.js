@@ -1,3 +1,21 @@
+/////////////Audio///////////////
+let audio = new Audio('sound1.mp3');
+
+const sound=()=>{
+      audio.play();
+}
+
+let navh1=document.querySelector("#navh");
+navh1.onclick=sound;
+let navm1=document.querySelector("#navm")
+navm1.onclick=sound;
+let navo1=document.querySelector("#navo")
+navo1.onclick=sound;
+let navf1=document.querySelector("#navf")
+navf1.onclick=sound;
+
+//////////Parallax///////////
+
 const parallax_el = document.querySelectorAll('.parallax')
 
 let xValue = 0, yValue = 0;
