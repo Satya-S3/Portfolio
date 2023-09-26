@@ -21,6 +21,7 @@
 
 #loader{
       display: grid;
+      color: #4e4e4e;
       place-items: center;
       background: #000000;
       height: 100vh;
