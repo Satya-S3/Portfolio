@@ -1,8 +1,14 @@
 /////////Loader///////////////
 let loader=document.querySelector('#loader');
-window.addEventListener("load",function(){
+
+setTimeout(()=>{
       loader.style.display="none";
-})
+},3500)
+
+// window.addEventListener("load",function(){
+//       loader.style.display="none";
+// })
+
 /////////////Audio///////////////
 let audio = new Audio('sound1.mp3');
 
