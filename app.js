@@ -1,5 +1,5 @@
 /////////Loader///////////////
-let loader=document.querySelector('#loader');
+let loader=document.querySelector('.loader');
 
 setTimeout(()=>{
       loader.style.display="none";
