@@ -3,7 +3,7 @@ let loader=document.querySelector('.loader');
 
 setTimeout(()=>{
       loader.style.display="none";
-},3500)
+},0)
 
 // window.addEventListener("load",function(){
 //       loader.style.display="none";
@@ -123,8 +123,8 @@ const satya = (event)=>{
   }, 50);
 }
 
-let toph2=document.querySelector("#top-h2")
-toph2.onmouseover=satya;
+// let toph2=document.querySelector("#top-h2")
+// toph2.onmouseover=satya;
 let navh=document.querySelector("#navh")
 navh.onmouseover=satya;
 let navm=document.querySelector("#navm")

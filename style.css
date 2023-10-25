@@ -179,6 +179,77 @@
     }
 
 /* Loader Over */
+
+
+
+
+/* Text Animation */
+
+    .buttonnn {
+      margin: 0;
+      height: auto;
+      background: transparent;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+    }
+
+    .actual-text{
+      font-size: 6em;
+    }
+ 
+    .buttonnn {
+      letter-spacing: 3px;
+      font-family: "Arial";
+      position: relative;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,0.6);
+    }
+
+    .hover-text {
+      font-size: 6rem;
+      position: absolute;
+      box-sizing: border-box;
+      content: attr(data-text);
+      color: #37FF8B;
+      width: 0%;
+      inset: 0;
+      border-right: 6px solid #37FF8B;
+      overflow: hidden;
+      transition: 0.5s;
+      -webkit-text-stroke: 1px #37FF8B;
+    }
+  
+    .buttonnn:hover .hover-text {
+      width: 100%;
+      filter: drop-shadow(0 0 23px  #37FF8B)
+    }
+
+@media screen and (max-width:670px){
+      .actual-text{
+            font-size: 4em;
+          }
+          .hover-text{
+            font-size: 4em;
+          }
+}
+@media screen and (max-width:450px){
+      .actual-text{
+            font-size: 2.5em;
+          }
+          .hover-text{
+            font-size: 2.5em;
+          }
+          .buttonnn{
+            -webkit-text-stroke: 0.7px rgba(255,255,255,0.6);
+          }
+}
+/* Text Animation */
+
+
+
+
 html {
       scroll-behavior: smooth;
 }
