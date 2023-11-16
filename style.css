@@ -8,15 +8,15 @@
       width: 15px;
 }
 ::-webkit-scrollbar-track{
-      box-shadow: inset 2px 1px 10px rgb(2, 46, 2);
+      box-shadow: inset 2px 1px 10px #37FF8B;
 }
 ::-webkit-scrollbar-thumb{
-      background-color: rgb(4, 32, 13);
-      box-shadow: inset 0px 0px 10px rgb(119, 222, 126);
+      background-color: #37FF8B;
+      box-shadow: inset 0px 0px 10px #214530;
       border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{
-      background-color: #0f4918;
+      background-color: #30b344;
 }
 /* Loader */
 
