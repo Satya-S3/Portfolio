@@ -16,6 +16,7 @@
       border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{
+      cursor: url("img/hover.png"),auto;
       background-color: #30b344;
 }
 /* Loader */
@@ -195,10 +196,12 @@
     }
 
     .actual-text{
+      cursor: url("img/hover.png"),auto;
       font-size: 6em;
     }
  
     .buttonnn {
+      cursor: url("img/hover.png"),auto;
       letter-spacing: 3px;
       font-family: "Arial";
       position: relative;
@@ -222,6 +225,7 @@
     }
   
     .buttonnn:hover .hover-text {
+      cursor: url("img/hover.png"),auto;
       width: 100%;
       filter: drop-shadow(0 0 23px  #37FF8B)
     }
@@ -257,6 +261,7 @@ html {
 body {
       background-image: linear-gradient(to right, rgba(4, 12, 12, 0.8), rgb(22, 87, 100, 0.9), rgba(4, 12, 12, 0.8));
       overflow-x: hidden;
+      cursor: url("img/cursor.png"),auto;
 }
 
 header {
@@ -283,6 +288,7 @@ header nav img {
 }
 header nav img:hover{
       animation: rotate 4s infinite linear;
+      cursor: url("img/hover.png"),auto;
 }
 
 header ul {
@@ -322,6 +328,7 @@ header ul li{
 }
 
 header ul a {
+      cursor: url("img/hover.png"),auto;
       text-shadow: 2px 2px 2px black;
       text-decoration: none;
       color: #fff;
@@ -723,8 +730,12 @@ span {
 .cardbody h6{
       text-shadow: 2px 2px 4px black;
 }
+.cardbody h6 a{
+      cursor: url("img/hover.png"),auto;
+}
 .cardbody h6 a:hover > img{
       animation: rotate 4s infinite linear;
+      cursor: url("img/hover.png"),auto;
 }
 
 .content .img {
@@ -795,6 +806,7 @@ span {
 
 .content .img:hover .cardbody {
       top: 0;
+      cursor: url("img/cursor.png"),auto;
 }
 
 .content .img .cardbody img {
@@ -915,6 +927,7 @@ span {
 }
 
 .skill-box {
+      cursor: url("img/hover.png"),auto;
       padding: 1rem;
       color: #0a0a0a;
       cursor: pointer;
@@ -932,6 +945,7 @@ span {
       box-shadow: 2px 4px 5px black;
       transform: translateY(-10px);
       animation:floating 2s linear infinite;
+      cursor: url("img/hover.png"),auto;
 }
 @keyframes floating{
       0%{
@@ -947,6 +961,7 @@ span {
 
 
 .skill-title {
+      cursor: url("img/hover.png"),auto;
       text-shadow: 2px 2px 2px black;
       display: flex;
       flex-direction: column;
@@ -1027,13 +1042,18 @@ span {
 }
 
 .hidden {
+      cursor: url("img/cursor.png"),auto;
       opacity: 0;
       filter: blur(5px);
       transform: translateX(-100%);
       transition: all 1s;
 }
+.hidden2{
+      cursor: url("img/cursor.png"),auto;
+} 
 
 .show {
+      cursor: url("img/cursor.png"),auto;
       opacity: 1;
       filter: blur(0);
       transform: translateX(0);
@@ -1076,6 +1096,7 @@ span {
 
 .project-icon img:hover {
       transform: translateY(-5px);
+      cursor: url("img/hover.png"),auto;
 }
 
 .project-icon #p1-html {
@@ -1104,6 +1125,7 @@ span {
       transform: translateZ(30px);
 }
 .btn-code .btn {
+      cursor: url("img/hover.png"),auto;
       margin: 0 10px;
 }
 
@@ -1127,6 +1149,7 @@ span {
 
 /* --------------------Submit------------------- */
 .main3 {
+      cursor: url("img/cursor.png"),auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1136,14 +1159,20 @@ span {
 }
 
 .main3 .card {
+      cursor: url("img/cursor.png"),auto;
       background-color: transparent;
+}
+.main3 .card label{
+      cursor: url("img/cursor.png"),auto;
 }
 
 .main3 .c {
       background-color: transparent;
       box-shadow: 2px 2px 5px white;
 }
-
+.card-footer .btn{
+      cursor: url("img/hover.png"),auto;
+} 
 .main3 .c .ch,
 .main3 .c .cf {
       background-color: rgba(0, 0, 0, 0.2);
@@ -1201,9 +1230,13 @@ footer .social {
 footer .social h6 {
       padding: 15px;
 }
+footer .social h6 a{
+      cursor: url("img/hover.png"),auto;
+}
 
 .social h6:hover > img{
       animation: rotate 4s infinite linear;
+      cursor: url("img/hover.png"),auto;
 }
 
 @media (max-width:770px) {
