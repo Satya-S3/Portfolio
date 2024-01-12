@@ -972,6 +972,9 @@ span {
       animation: scrollSkill 7s infinite linear;
       
 }
+.Skill:hover{
+      animation-play-state: paused;
+}
 @keyframes scrollSkill{
       from{
             transform:translate(0);
@@ -1049,7 +1052,7 @@ span {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 2rem auto;
+      margin: 2.5rem 3.5rem;
 }
 
 .project-box .card {
@@ -1075,16 +1078,19 @@ span {
 .project-icon #p1-html {
       padding-top: 5px;
       width: 2.5rem;
+      height: 2.8rem;
 }
 
 .project-icon #p1-css {
       padding-top: 5px;
       width: 1.8rem;
+      height: 2.8rem;
 }
 
 .project-icon #p1-js {
       padding-top: 5px;
       width: 3.5rem;
+      height: 2.8rem;
 }
 
 .card-body {
@@ -1141,7 +1147,7 @@ span {
 
 .main3 .c {
       background-color: transparent;
-      box-shadow: 2px 2px 5px white;
+      box-shadow: 2px 2px 10px black;
 }
 .card-footer .btn{
       cursor: url("img/hover.png"),auto;
