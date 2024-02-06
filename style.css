@@ -19,6 +19,9 @@
       cursor: url("img/hover.png"),auto;
       background-color: #30b344;
 }
+::selection{
+      background-color: #30b344;
+}
 /* Loader */
 
 
@@ -336,11 +339,13 @@ header ul a {
       font-weight: 400;
       font-size: 0.73rem;
 }
-
 header ul a:hover {
-      color: #ffffffdc;
+      color: #fff;
 }
-
+.count{
+      background: transparent;
+      margin-left: 5rem;
+}
 
 main {
       font-family: "Times New Roman", Times, serif;
@@ -812,6 +817,21 @@ span {
 .content .img .cardbody img {
       width: 25px;
 }
+.bg img{
+      position: fixed;
+      opacity: 0.4;
+      transform: scale(.3) rotate(10deg);
+      height: 150px;
+
+      &:nth-of-type(1){top:10%;left:60%;}
+      &:nth-of-type(2){top:40%;left:30%;}
+      &:nth-of-type(3){top:20%;left:90%;}
+      &:nth-of-type(4){top:33%;left:3%;}
+      &:nth-of-type(5){top:20%;left:15%;}
+      &:nth-of-type(6){top:24%;left:80%;}
+      &:nth-of-type(7){top:33%;left:67%;}
+      &:nth-of-type(8){top:7%;left:26%;}
+}
 
 .content .img .cardbody a {
       color: white;
@@ -1168,6 +1188,28 @@ span {
 
 }
 
+
+
+.main4 {
+      cursor: url("img/cursor.png"),auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+}
+.main4 p{
+      letter-spacing: 3px;
+      font-size: 20px;
+}
+.main4 img{
+      height: 50px;
+}
+.main4 img:hover{
+      cursor: url("img/cursor.png"),auto;
+}
 
 /* footer*/
 footer {
