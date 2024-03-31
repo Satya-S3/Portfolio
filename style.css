@@ -989,12 +989,34 @@ span {
       width: max-content;
       flex-wrap: nowrap;
       margin: 0 auto;
-      animation: scrollSkill 7s infinite linear;
+      animation: scrollSkill 12s infinite linear;
+
+      div{
+            position: relative;
+            box-shadow: 0 0 10px black;
+      }
+      #skill-name{
+            visibility: hidden;
+            position: absolute;
+            bottom: -30px;
+            color: white;
+            text-shadow: 0 0 2px black;
+            font-size: 18px;
+      }
+      img{
+            transition: 0.5s;
+      }
+
+      div:hover img{
+            transform: scale(1.2);
+      }
+      div:hover #skill-name{
+            visibility: visible;
+      }
+
       
 }
-.Skill:hover{
-      animation-play-state: paused;
-}
+
 @keyframes scrollSkill{
       from{
             transform:translate(0);
